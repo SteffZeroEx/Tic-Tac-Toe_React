@@ -1,0 +1,10 @@
+{
+  "name": "tictactoe-ws",
+  "type": "module",
+  "dependencies": {
+    "socket.io": "^4.7.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
