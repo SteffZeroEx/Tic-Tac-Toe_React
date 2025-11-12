@@ -126,7 +126,12 @@ function App() {
     socket.emit("create", ({ roomId, symbol }) => {
       setRoomId(roomId);
       setMySymbol(symbol);
-      alert(`Link zum Mitspielen:\n${window.location.origin}/?g=${roomId}`);
+      const invite = `${window.location.origin}/?g=${roomId}`;
+      navigator.clipboard
+        .writeText(invite)
+        .then(() => alert(`Einladungslink wurde in die Zwischenablage kopiert!\n\n${invite}`))
+        .catch(() => alert(`Kopieren fehlgeschlagen.\n\n${invite}`));
+
     });
   }
 
