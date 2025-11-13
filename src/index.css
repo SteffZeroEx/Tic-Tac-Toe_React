@@ -96,6 +96,29 @@ h1 {
   text-align: center;
 }
 
+.game_btn {
+  padding: 0.4rem;
+  background-color: transparent;
+  border: solid 2px f6e35a;
+  animation: pulse 5s infinite ease-in-out;
+  transition: 0.3s;
+  color: #c3ba78;
+  margin-bottom: 2rem;
+}
+
+.game_btn:hover {
+  color: #f8ca31;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.link_field {
+  padding: 0.3rem;
+  color: #c3ba78;
+  background-color: transparent;
+  border: solid 2px #f6e35a;
+}
+
 #players button:hover {
   color: #f8ca31;
 }

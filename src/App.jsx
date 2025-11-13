@@ -173,13 +173,14 @@ function App() {
 
         {/* Online-Controls */}
         <div style={{ textAlign: "center", marginTop: "1rem" }}>
-          {!roomId && <button onClick={createGame}>Online-Spiel erstellen</button>}
+          {!roomId && <button className="game_btn" onClick={createGame}>Online-Spiel erstellen</button>}
 
           {roomId && (
             <div>
               <p>Raum-ID: {roomId}</p>
               <p>
                 <input
+                  className="link_field"
                   type="text"
                   value={`${window.location.origin}/?g=${roomId}`}
                   readOnly
@@ -191,6 +192,7 @@ function App() {
                   }}
                 />
                 <button
+                className="game_btn"
                   style={{ marginLeft: "0.5rem" }}
                   onClick={() => navigator.clipboard.writeText(`${window.location.origin}/?g=${roomId}`)}>
                   Link kopieren
