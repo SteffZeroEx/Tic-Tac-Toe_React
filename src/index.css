@@ -124,12 +124,14 @@ h1 {
 }
 .own_role {
   color: #f8ca31;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: 0 2rem 0 2rem;
 }
 .is_playing {
   color: #dc143c;
-  font-size: 1.5rem;
-  animation: pulse-text-size 5s;
+  font-size: 1rem;
+  animation: pulse-text-size 5s infinite ease-in-out;
+  padding: 0 2rem 0 2rem;
 }
 
 #players button:hover {
