@@ -177,7 +177,7 @@ function App() {
 
           {roomId && (
             <div>
-              <p>Raum-ID: {roomId}</p>
+              <p className="general_text">Raum-ID: {roomId}</p>
               <p>
                 <input
                   className="link_field"
@@ -198,8 +198,8 @@ function App() {
                   Link kopieren
                 </button>
               </p>
-              <p>
-                Deine Rolle: <strong>{mySymbol ?? "Zuschauer"}</strong> · Am Zug: <strong>{activePlayer}</strong>
+              <p className="general_text">
+                Deine Rolle: <strong className="own_role">{mySymbol ?? "Zuschauer"}</strong> · Am Zug: <strong className="is_playing">{activePlayer}</strong>
               </p>
             </div>
           )}
