@@ -129,7 +129,7 @@ h1 {
   padding: 0 1rem 0 1rem;
 }
 .is_playing {
-  color: #87c01d;
+  color: #c0281d;
   font-size: 1.3rem;
   animation: pulse-text-size 5s infinite ease-in-out;
   padding: 0 1rem 0 1rem;
