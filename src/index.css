@@ -103,7 +103,7 @@ h1 {
   animation: pulse 5s infinite ease-in-out;
   transition: 0.3s;
   color: #c3ba78;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .game_btn:hover {
@@ -120,18 +120,19 @@ h1 {
 }
 
 .general_text {
-  color: #c3ba78
+  color: #c3ba78;
+  margin-bottom: 2rem;
 }
 .own_role {
   color: #f8ca31;
-  font-size: 1rem;
-  padding: 0 2rem 0 2rem;
+  font-size: 1.2rem;
+  padding: 0 1rem 0 1rem;
 }
 .is_playing {
   color: #dc143c;
-  font-size: 1rem;
+  font-size: 1.2rem;
   animation: pulse-text-size 5s infinite ease-in-out;
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 0 1rem;
 }
 
 #players button:hover {
